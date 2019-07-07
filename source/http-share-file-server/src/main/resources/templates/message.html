@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!--    width=device-width 表示宽度是设备屏幕的宽度。-->
+    <!--    initial-scale=1 表示初始的缩放比例。-->
+    <!--    shrink-to-fit=no 自动适应手机屏幕的宽度。-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" th:href="@{../static/bootstrap-4.0.0-dist/css/bootstrap.min.css} ">
+</head>
+<body>
+
+
+
+<div class="row">
+    <div class="jumbotron text-center" style="width:100%;">
+        <p th:text="${tempMessage.messageContent}" />
+    </div>
+</div>
+<div class="row">
+    <div class="jumbotron text-center" style="width:100%;">
+        <a href="/">返回</a>
+    </div>
+
+</div>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script th:src="@{../static/jquery/3.2.1/jquery.min.js}"></script>
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script th:src="@{../static/popper.js/1.12.5/umd/popper.min.js}"></script>
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script th:src="@{../static/bootstrap-4.0.0-dist/js/bootstrap.min.js}"></script>
+<script th:src="@{/static/bootstrap-table-1.14.2-dist/bootstrap-table.js}"></script>
+<script th:src="@{/static/js/index.js}"></script>
+</body>
+</html>

@@ -34,7 +34,7 @@ Spring Boot 2.1.6 + Swagger2+ H2  + Web + actuator+thymeleaf + lombok+ logback
  修改监控文件夹很简单只需要修改application-dev.properties 下的 com.xingyun.ftp.ftp-share-folder=C:/ftp_share_folder 即可
  
  
-3. 长文本持久化支持以实现类似剪切板功能
+2. 长文本持久化支持以实现类似剪切板功能
 
  基于H2内嵌文本数据库实现,最大支持999999999个字符的保存和读取
 

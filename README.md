@@ -35,6 +35,30 @@ Spring Boot 2.1.6 + Swagger2+ H2  + Web + actuator+thymeleaf + lombok+ logback
 
  基于H2内嵌文本数据库实现,最大支持999999999个字符的保存和读取
  
+3. 关于如何安装 
+
+ - 在项目pom.xml 根目录下执行maven编译命令
+ 
+ ```
+ mvn compile
+ ```
+ - 在项目pom.xml 根目录下执行maven打包命令
+ ```
+ mvn package
+ ```
+- 运行target 目录下的jar
+```
+java -jar http-share-file-server-0.0.2-RELEASE.jar
+```
+ 
+4. 关于如何访问
+
+ - 启动程序后访问默认地址: http://127.0.0.1  
+ 
+ - 启动欢迎界面后可以看到一个IP地址和端口号,其他电脑访问使用这个IP即可.
+ 
+ 
+ 
  # 附录一
  
  ## 关于前置机

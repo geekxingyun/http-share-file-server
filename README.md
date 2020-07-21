@@ -48,7 +48,7 @@ Spring Boot 2.1.6 + Swagger2+ H2  + Web + actuator+thymeleaf + lombok+ logback
  ```
 - 在项目的 target 目录执行启动命令
 ```
-java -jar http-share-file-server-0.0.2-RELEASE.jar
+nohup java -jar http-share-file-server-0.0.2-RELEASE.jar com.xingyun.ftp.ftp-share-folder=/Users/zhaoqingfeng/downloads &
 ```
  
 4. 关于如何访问

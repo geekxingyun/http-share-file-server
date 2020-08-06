@@ -22,8 +22,8 @@ public class HomePageController {
     @Autowired
     ServerProperties serverProperties;
 
-    @GetMapping(value = "/")
-    public String indexPage(Model model){
+    @GetMapping(value = "/home.do")
+    public String homePage(Model model){
 
         File ftpShareFolderFile=new File(smartFtpProperties.getFtpShareFolder());
         if(!ftpShareFolderFile.exists()){
@@ -42,6 +42,6 @@ public class HomePageController {
         sb.append(":");
         sb.append(serverProperties.getPort());
         model.addAttribute("hostAddress", sb.toString());
-        return "index";
+        return "home";
     }
 }

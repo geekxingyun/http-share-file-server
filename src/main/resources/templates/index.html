@@ -1,98 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <!--    width=device-width 表示宽度是设备屏幕的宽度。-->
-    <!--    initial-scale=1 表示初始的缩放比例。-->
-    <!--    shrink-to-fit=no 自动适应手机屏幕的宽度。-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home Page</title>
-    <!-- 新 Bootstrap4 核心 CSS 文件 -->
-    <link rel="stylesheet" th:href="@{../static/bootstrap-4.0.0-dist/css/bootstrap.min.css} ">
 </head>
 <body>
 
-<div class="jumbotron text-center">
-    <h1>Http Share File Server</h1>
-     <p th:text="${hostAddress}" />
-    <p>by fairy_xingyun@hotmail.com</p>
+<div align="center">
+    <h2>welcome to use http share ftp file server !</h2>
+    <h3><a th:href="@{/home.do}">Enter</a> </h3>
 </div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4">
-            <h3>极客导航</h3>
-            <a href="https://www.jikedaohang.com/" target="_blank">极客导航</a>
-        </div>
-        <div class="col-sm-4">
-            <h3>当前系统API文档</h3>
-            <p><a href="/swagger-ui.html" target="_blank">API Document</a></p>
-        </div>
-        <div class="col-sm-4">
-            <h3>博客地址</h3>
-            <p><a href="https://xingyun.blog.csdn.net/" target="_blank">星云CSDN博客</a></p>
-        </div>
-        <div class="col-sm-4">
-            <h3>GitHub</h3>
-            <p><a href="https://github.com/geekxingyun" target="_blank">GitHub</a></p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Share File Server</h3>
-            <p><a href="/toFtpPage" target="_blank">Share File Server</a></p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="rightD col-md-8">
-            <pre>
-            </pre>
-        </div>
-    </div>
-
-</div>
-
-
-<div class="row">
-    <div class="jumbotron text-center" style="width:100%;">
-        <div col-sm-12>
-            <form>
-                <div class="recoveryButtonStyle" >
-                 <textarea id="tempMessage" name="tempMessage" th:rows="10" style="width:100%;"></textarea>
-                </div>
-                <div class="recoveryButtonStyle" col-md-8>
-                    <tr>
-                        <td><button type="button" class="btn btn-default buttonFont"  onclick="javascript:saveMessage()" style="background: #609ee9;width:100%;">Save</button></td>
-                    </tr>
-                </div>
-            </form>
-        </div>
-    </div>
-
-</div>
-
-<div class="row">
-    <div class="jumbotron text-center" style="width:100%;">
-    <div class="col-sm-12">
-        <div class="recoveryButtonStyle" col-md-8>
-        <tr>
-            <td><a href="/api/showMessage.do"><button type="button" class="btn btn-default buttonFont"  style="background: #609ee9;width:100%;">Read</button></a></td>
-        </tr>
-        </div>
-    </div>
-    </div>
-</div>
-
-
-
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script th:src="@{../static/jquery/3.2.1/jquery.min.js}"></script>
-    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
-    <script th:src="@{../static/popper.js/1.12.5/umd/popper.min.js}"></script>
-    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-    <script th:src="@{../static/bootstrap-4.0.0-dist/js/bootstrap.min.js}"></script>
-
-    <script th:src="@{/static/bootstrap-table-1.14.2-dist/bootstrap-table.js}"></script>
-    <script th:src="@{/static/js/index.js}"></script>
-
 </body>
 </html>

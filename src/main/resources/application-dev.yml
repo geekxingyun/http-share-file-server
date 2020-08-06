@@ -1,0 +1,44 @@
+server:
+  port: 80
+  servlet:
+    context-path: /
+  tomcat:
+    max-connections: 10000
+    max-swallow-size: -1
+    max-http-post-size: 10GB
+  connection-timeout: 999999999
+
+
+com:
+  xingyun:
+    ftp:
+      ftp-share-folder: /Users/zhaoqingfeng/downloads/
+
+spring:
+  servlet:
+    multipart:
+      max-request-size: 10GB
+      max-file-size: 10GB
+      enabled: true
+  h2:
+    console:
+      path: /h2-console
+      enabled: false
+      settings:
+        web-allow-others: false
+  jpa:
+    database: h2
+    show-sql: true
+    hibernate:
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa
+
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/

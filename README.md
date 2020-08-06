@@ -10,6 +10,12 @@ Spring Boot 2.1.6 + Swagger2+ H2  + Web + actuator+thymeleaf + lombok+ logback
 
 # 项目描述
 
+访问登陆
+```
+admin
+666666
+```
+
 基于Spring Boot 开发的一个类似FTP文件服务器,实现功能如下：
 
 1. 支持文件上传下载
